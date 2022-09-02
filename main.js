@@ -1,7 +1,9 @@
 const got = require('got');
 const jsdom = require("jsdom");
-const jetpack = require("fs-jetpack");
+const jp = require("fs-jetpack");
+const jetpack = jp.cwd("out");
 const { JSDOM } = jsdom;
+
 
 //const counties = ['bacs-kiskun', 'baranya', 'bekes', 'borsod-abauj-zemplen', 'csongrad-csanad', 'fejer', 'gyor-moson-sopron', 'hajdu-bihar', 'heves', 'jasz-nagykun-szolnok', 'komarom-esztergom', 'nograd', 'pest', 'somogy', 'szabolcs-szatmar-bereg', 'tolna', 'vas', 'veszprem', 'zala'];
 const types = ['lakas', 'haz'];
